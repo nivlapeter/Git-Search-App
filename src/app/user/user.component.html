@@ -1,1 +1,40 @@
-<p>user works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5">
+        <app-user-forms></app-user-forms>
+      </div>
+      <div class="col-md-7">
+        <div class="well" id="display">
+      <div class="row">
+        <div class="col-sm-3">
+            <img class="img" src="{{profile.avatar_url}}" class="img-fluid" alt="profile">
+        </div>
+      <div class="col-md-7">
+        <div class="well" id="display">
+            <br>
+            <h1>{{user.userName}}</h1>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>       
+        </div>
+        <div>
+          <br>
+          <br>
+          <br>
+          <h4>Repositories: {{user.repos}}</h4>
+          <br>
+          <br>
+          <br>
+          <h4>Followers: {{user.followers}}</h4>
+          <br>
+          <br>
+          <br>
+          <h4>Following: {{user.following}}</h4>
+          <br>
+          <br>
+          <br>
+          <br>
+    </div>
+  </div>

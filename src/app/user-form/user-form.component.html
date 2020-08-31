@@ -1,1 +1,19 @@
-<p>user-form works!</p>
+<form class="myform">
+    <div class="input-form">
+      <input id="search" type="text" name="search" class="form-control" placeholder="search" #search>
+      <br>
+      <button type="submit" class="btn btn-primary" (click)="searcher(search.value)">SEARCH</button>
+    </div>
+    <div>
+
+      <h1>{{user.name}}</h1>
+    </div>
+    <div *ngFor='let user-repository of user.repos'>
+      <hr>
+      <h4>{{repository.name}}</h4>
+      <p>{{repository.description}}</p>
+    </div>
+  </form>
+
+
+     

@@ -1,1 +1,6 @@
-<p>user-repository works!</p>
+ <div *ngFor='let repository of user.repos'> 
+    <hr>
+    <h4>{{repository.name}}</h4>
+    <p>{{repository.description}}</p>
+    </div>
+
